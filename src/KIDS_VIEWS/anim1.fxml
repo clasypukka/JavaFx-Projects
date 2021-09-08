@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="375.0" prefWidth="432.0" visible="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KIDS_CONTROLLER.Anim1Controller">
+   <children>
+      <Pane layoutX="48.0" layoutY="65.0" prefHeight="253.0" prefWidth="348.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="247.0" fitWidth="253.0" layoutX="48.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/brown-goat.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="335.0" onAction="#speak" prefHeight="37.0" prefWidth="355.0" ripplerFill="WHITE" style="-fx-background-color: GREEN;" text="SPEAK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fx:id="NEXT_F" fill="GREEN" glyphName="FORWARD" layoutX="407.0" layoutY="393.0" size="25.0" wrappingWidth="18.0" />
+      <JFXButton layoutX="391.0" layoutY="372.0" onAction="#next_anim2" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="GREEN" glyphName="HOME" layoutX="399.0" layoutY="29.0" size="25.0" />
+      <JFXButton layoutX="385.0" layoutY="8.0" onAction="#NEXT_MAIN" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <Label layoutX="181.0" layoutY="21.0" style="-fx-background-color: GREEN;" text="A  GOAT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#fffbfb" glyphName="BULLHORN" layoutX="269.0" layoutY="362.0" size="30.0" />
+   </children>
+</AnchorPane>

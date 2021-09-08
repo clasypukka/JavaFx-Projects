@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="371.0" prefWidth="426.0" visible="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KIDS_CONTROLLER.Anim7Controller">
+   <children>
+      <Pane layoutX="53.0" layoutY="44.0" prefHeight="253.0" prefWidth="348.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="308.0" fitWidth="300.0" layoutX="26.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/bigstock-funny-rat-isolated-on-white-b-135223952-360x203.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="321.0" onAction="#speak" prefHeight="37.0" prefWidth="355.0" ripplerFill="WHITE" style="-fx-background-color: GREEN;" text="SPEAK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fx:id="NEXT_F" fill="GREEN" glyphName="FORWARD" layoutX="415.0" layoutY="379.0" size="25.0" wrappingWidth="18.0" />
+      <JFXButton layoutX="399.0" layoutY="358.0" onAction="#next_anim8" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="GREEN" glyphName="FORWARD" layoutX="18.0" layoutY="380.0" rotate="180.0" size="25.0" text="" wrappingWidth="18.0" />
+      <JFXButton layoutX="6.0" layoutY="357.0" onAction="#BACK_anim6" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="GREEN" glyphName="HOME" layoutX="407.0" layoutY="39.0" size="25.0" />
+      <JFXButton layoutX="393.0" layoutY="18.0" onAction="#NEXT_MAIN" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <Label layoutX="191.0" layoutY="1.0" style="-fx-background-color: GREEN;" text="A  RAT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#fffbfb" glyphName="BULLHORN" layoutX="284.0" layoutY="349.0" size="30.0" />
+   </children>
+</AnchorPane>

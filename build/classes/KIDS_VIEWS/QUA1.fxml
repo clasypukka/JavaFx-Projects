@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KIDS_CONTROLLER.QUA1Controller">
+   <children>
+      <Pane fx:id="QUA1" layoutX="152.0" layoutY="31.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="17.0" layoutY="34.0" text="Q1.">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="34.0" prefHeight="30.0" prefWidth="231.0" text="WHAT ANIMAL IS THIS?">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="230.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/cow_fb.jpg" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="Q1A" layoutX="67.0" layoutY="229.0" mnemonicParsing="false" text="A     GOAT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q1B" layoutX="68.0" layoutY="274.0" mnemonicParsing="false" text="B     COW" toggleGroup="$Q1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q1C" layoutX="69.0" layoutY="327.0" mnemonicParsing="false" text="C     DOG" toggleGroup="$Q1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="557.0" layoutY="385.0" size="20.0" />
+            <JFXButton layoutX="531.0" layoutY="361.0" onAction="#NEXT_QUA2" prefHeight="30.0" prefWidth="62.0" text="  " />
+         </children>
+      </Pane>
+      <Pane fx:id="QUA2" prefHeight="460.0" prefWidth="660.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="5.0" layoutY="25.0" text="Q2 .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="27.0" text="WHAT COLOR IS THIS?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q2A" layoutX="61.0" layoutY="212.0" mnemonicParsing="false" text="A     GREEN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q2" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q2B" layoutX="61.0" layoutY="254.0" mnemonicParsing="false" text="B     RED" toggleGroup="$Q2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q2C" layoutX="62.0" layoutY="296.0" mnemonicParsing="false" text="C     BLUE" toggleGroup="$Q2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <Pane layoutX="315.0" layoutY="58.0" prefHeight="154.0" prefWidth="200.0" style="-fx-background-color: GREEN;" />
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="43.0" layoutY="376.0" rotate="180.0" size="20.0" />
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="547.0" layoutY="381.0" size="20.0" />
+            <JFXButton layoutX="533.0" layoutY="362.0" onAction="#NEXT_Q3" prefHeight="25.0" prefWidth="47.0" text="  " />
+            <JFXButton layoutX="26.0" layoutY="357.0" onAction="#BACK_Q1" prefHeight="25.0" prefWidth="55.0" text="  " />
+         </children>
+      </Pane>
+      <Pane fx:id="QUA3" layoutX="30.0" layoutY="30.0" prefHeight="460.0" prefWidth="660.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="553.0" layoutY="383.0" size="20.0" />
+            <Label layoutX="19.0" layoutY="49.0" text="Q3  .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="51.0" text="HOW MANY VOWEL SOUNDS DO WE HAVE?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q3A" layoutX="117.0" layoutY="171.0" mnemonicParsing="false" text="A     7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q3" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q3B" layoutX="119.0" layoutY="219.0" mnemonicParsing="false" text="B     5" toggleGroup="$Q3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q3C" layoutX="120.0" layoutY="271.0" mnemonicParsing="false" text="C     4" toggleGroup="$Q3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="30.0" layoutY="379.0" rotate="180.0" size="20.0" />
+            <JFXButton layoutX="539.0" layoutY="362.0" onAction="#NEXT_Q4" prefHeight="25.0" prefWidth="47.0" text="  " />
+            <JFXButton layoutX="14.0" layoutY="359.0" onAction="#BACK_Q2" prefHeight="25.0" prefWidth="47.0" text="  " />
+         </children>
+      </Pane>
+      <Pane fx:id="QUA4" layoutX="40.0" layoutY="40.0" prefHeight="460.0" prefWidth="660.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="548.0" layoutY="374.0" size="20.0" />
+            <Label layoutX="21.0" layoutY="50.0" text="Q 4  .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="53.0" text="LETTER Q STANDS FOR?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q4A" layoutX="144.0" layoutY="147.0" mnemonicParsing="false" text="A     BALL">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q4" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q4B" layoutX="144.0" layoutY="198.0" mnemonicParsing="false" text="B     PIG" toggleGroup="$Q4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q4C" layoutX="143.0" layoutY="252.0" mnemonicParsing="false" text="C     QUEEN" toggleGroup="$Q4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <JFXButton layoutX="524.0" layoutY="349.0" onAction="#NEXT_Q5" prefHeight="37.0" prefWidth="62.0" text="  " />
+            <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="349.0" onAction="#BACK_Q3" prefHeight="37.0" prefWidth="62.0" text="  ">
+               <graphic>
+                  <FontAwesomeIconView glyphName="FORWARD" rotate="180.0" size="20.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="QUA5" layoutX="50.0" layoutY="50.0" prefHeight="460.0" prefWidth="660.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="558.0" layoutY="381.0" size="20.0" />
+            <Label layoutX="31.0" layoutY="53.0" text="Q5.">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="55.0" text="WHAT IS  THE LAST LETTER IN THE ALPHABET?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q5A" layoutX="97.0" layoutY="156.0" mnemonicParsing="false" text="A     U">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q5" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q5B" layoutX="97.0" layoutY="217.0" mnemonicParsing="false" text="B     M" toggleGroup="$Q5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q5C" layoutX="100.0" layoutY="276.0" mnemonicParsing="false" text="C     Z" toggleGroup="$Q5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="32.0" layoutY="382.0" rotate="180.0" size="20.0" />
+            <JFXButton layoutX="540.0" layoutY="360.0" onAction="#NEXT_Q6" prefHeight="30.0" prefWidth="55.0" text="  " />
+            <JFXButton layoutX="14.0" layoutY="355.0" onAction="#BACK_Q4" prefHeight="40.0" prefWidth="55.0" text="  " />
+         </children>
+      </Pane>
+      <Pane fx:id="QUA6" layoutX="60.0" layoutY="60.0" prefHeight="460.0" prefWidth="660.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="29.0" layoutY="377.0" rotate="180.0" size="20.0" />
+            <Label layoutX="23.0" layoutY="43.0" text="Q6 .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="45.0" text="WHAT IS THE LAST VOWEL SOUND?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q6A" layoutX="99.0" layoutY="133.0" mnemonicParsing="false" text="A     I">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q6" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q6B" layoutX="99.0" layoutY="200.0" mnemonicParsing="false" text="B     U" toggleGroup="$Q6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q6C" layoutX="101.0" layoutY="256.0" mnemonicParsing="false" text="C     E" toggleGroup="$Q6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="545.0" layoutY="378.0" size="20.0" />
+            <JFXButton layoutX="530.0" layoutY="354.0" onAction="#NEXT_Q7" prefHeight="30.0" prefWidth="47.0" text="  " />
+            <JFXButton layoutX="9.0" layoutY="353.0" onAction="#BACK_Q5" prefHeight="30.0" prefWidth="56.0" text="  " />
+         </children>
+      </Pane>
+      <Pane fx:id="QUA7" layoutX="7.0" layoutY="70.0" prefHeight="470.0" prefWidth="660.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="553.0" layoutY="380.0" size="20.0" />
+            <Label layoutX="26.0" layoutY="49.0" text="Q7  .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="49.0" text="WHAT IS THE FIRST CONSONANT SOUND?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q7A" layoutX="118.0" layoutY="131.0" mnemonicParsing="false" text="A     B">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q7" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q7B" layoutX="118.0" layoutY="195.0" mnemonicParsing="false" text="B     M" toggleGroup="$Q7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q7C" layoutX="119.0" layoutY="257.0" mnemonicParsing="false" text="C     Q" toggleGroup="$Q7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="33.0" layoutY="380.0" size="20.0" />
+            <JFXButton layoutX="539.0" layoutY="352.0" onAction="#NEXT_Q8" prefHeight="40.0" prefWidth="47.0" text="  " />
+            <JFXButton layoutX="14.0" layoutY="354.0" onAction="#BACK_Q6" prefHeight="40.0" prefWidth="56.0" text="  " />
+         </children>
+      </Pane>
+      <Pane fx:id="QUA8" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="33.0" layoutY="59.0" text="Q8  .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="61.0" text="WHAT FRUIT IS THIS?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q8A" layoutX="113.0" layoutY="194.0" mnemonicParsing="false" text="A     MANGO">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q8" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q8B" layoutX="115.0" layoutY="249.0" mnemonicParsing="false" text="B     COCOA" toggleGroup="$Q8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q8C" layoutX="116.0" layoutY="302.0" mnemonicParsing="false" text="C     ORANGE" toggleGroup="$Q8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="14.0" layoutY="379.0" rotate="180.0" size="20.0" />
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="559.0" layoutY="380.0" size="20.0" />
+            <JFXButton layoutX="543.0" layoutY="354.0" onAction="#NEXT_Q9" prefHeight="37.0" prefWidth="47.0" text="  " />
+            <JFXButton layoutX="4.0" layoutY="349.0" onAction="#BACK_Q7" prefHeight="37.0" prefWidth="47.0" text="  " />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="302.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/orange.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="QUA9" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="21.0" layoutY="41.0" text="Q9  .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="41.0" text="WHAT COLOR IS THIS?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q9A" layoutX="141.0" layoutY="196.0" mnemonicParsing="false" text="A     GREEN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q9" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q9B" layoutX="141.0" layoutY="260.0" mnemonicParsing="false" text="B     RED" toggleGroup="$Q9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q9C" layoutX="141.0" layoutY="315.0" mnemonicParsing="false" text="C     BLUE" toggleGroup="$Q9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <Pane layoutX="304.0" layoutY="48.0" prefHeight="154.0" prefWidth="200.0" style="-fx-background-color: BLUE;" />
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="28.0" layoutY="379.0" rotate="180.0" size="20.0" />
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="553.0" layoutY="380.0" size="20.0" />
+            <JFXButton layoutX="539.0" layoutY="361.0" onAction="#NEXT_Q10" prefHeight="25.0" prefWidth="47.0" text="  " />
+            <JFXButton layoutX="14.0" layoutY="361.0" onAction="#BACK_Q8" prefHeight="25.0" prefWidth="47.0" text="  " />
+         </children>
+      </Pane>
+      <Pane fx:id="QUA10" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="8.0" layoutY="30.0" text="Q10 .">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="31.0" text="WHAT  IS THIS?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Q10A" layoutX="127.0" layoutY="194.0" mnemonicParsing="false" text="A     AN EGG">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Q10" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Q10B" layoutX="127.0" layoutY="246.0" mnemonicParsing="false" text="B     AN ORANGE" toggleGroup="$Q10">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Q10C" layoutX="127.0" layoutY="301.0" mnemonicParsing="false" text="C     AN APPLE" toggleGroup="$Q10">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="28.0" layoutY="381.0" rotate="180.0" size="20.0" />
+            <FontAwesomeIconView glyphName="FORWARD" layoutX="547.0" layoutY="380.0" size="20.0" />
+            <JFXButton layoutX="532.0" layoutY="361.0" onAction="#NEXT_ANS" prefHeight="25.0" prefWidth="47.0" text="  " />
+            <JFXButton layoutX="14.0" layoutY="361.0" onAction="#BACK_Q9" prefHeight="25.0" prefWidth="47.0" text="  " />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="293.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/vc1dbgnsw7wqkvunqgfb.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="ANS" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="17.0" layoutY="11.0" prefHeight="21.0" prefWidth="23.0" text="Q1.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="50.0" prefHeight="21.0" prefWidth="23.0" text="Q2.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="91.0" prefHeight="21.0" prefWidth="23.0" text="Q3.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="164.0" prefHeight="21.0" prefWidth="23.0" text="Q5.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="203.0" prefHeight="21.0" prefWidth="23.0" text="Q6.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="235.0" prefHeight="21.0" prefWidth="23.0" text="Q7.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="275.0" prefHeight="21.0" prefWidth="23.0" text="Q8.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="319.0" prefHeight="21.0" prefWidth="23.0" text="Q9.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="125.0" prefHeight="21.0" prefWidth="23.0" text="Q4.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="365.0" prefHeight="21.0" prefWidth="32.0" text="Q10.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="LABEL1" layoutX="98.0" layoutY="10.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL10" layoutX="98.0" layoutY="361.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL2" layoutX="98.0" layoutY="47.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL3" layoutX="98.0" layoutY="85.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL4" layoutX="98.0" layoutY="124.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL5" layoutX="98.0" layoutY="161.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL6" layoutX="98.0" layoutY="198.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL7" layoutX="98.0" layoutY="236.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL8" layoutX="98.0" layoutY="275.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="LABEL9" layoutX="98.0" layoutY="318.0" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: BLUE;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <FontAwesomeIconView fill="BLUE" glyphName="HOME" layoutX="539.0" layoutY="38.0" size="25.0" />
+            <JFXButton layoutX="525.0" layoutY="9.0" onAction="#BACK_MAIN" prefHeight="37.0" prefWidth="55.0" text=" " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

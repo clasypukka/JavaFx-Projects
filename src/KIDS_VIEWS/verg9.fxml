@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="424.0" prefWidth="444.0" visible="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KIDS_CONTROLLER.Verg9Controller">
+   <children>
+      <Pane layoutX="61.0" layoutY="57.0" prefHeight="253.0" prefWidth="348.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="410.0" layoutX="20.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/Avocado-PNG-transparent-images-free-download-clipart-pics-Avocado-Transparent.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="351.0" onAction="#speak" prefHeight="37.0" prefWidth="355.0" ripplerFill="WHITE" style="-fx-background-color: #0bcde7;" text="SPEAK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#0bcde7" glyphName="FORWARD" layoutX="435.0" layoutY="419.0" size="25.0" text="" wrappingWidth="18.0" />
+      <JFXButton layoutX="410.0" layoutY="397.0" onAction="#NEXT_verg10" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="#0bcde7" glyphName="FORWARD" layoutX="21.0" layoutY="416.0" rotate="180.0" size="25.0" text="" wrappingWidth="18.0" />
+      <JFXButton layoutX="9.0" layoutY="393.0" onAction="#BACK_verg8" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="#0bcde7" glyphName="HOME" layoutX="423.0" layoutY="51.0" size="25.0" />
+      <JFXButton layoutX="409.0" layoutY="30.0" onAction="#NEXT_MAIN" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <Label layoutX="168.0" layoutY="13.0" style="-fx-background-color: #0bcde7;" text="AVOCADO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#fffbfb" glyphName="BULLHORN" layoutX="295.0" layoutY="383.0" size="30.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KIDS_CONTROLLER.ConYController">
+   <children>
+      <Pane layoutX="55.0" layoutY="62.0" prefHeight="253.0" prefWidth="348.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="253.0" fitWidth="355.0" layoutX="-5.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="253.0" fitWidth="355.0" layoutX="48.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="253.0" fitWidth="348.0" layoutX="133.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/alphabet-coloring-y.jpg" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView fill="#005a7f" glyphName="FORWARD" layoutX="425.0" layoutY="409.0" size="25.0" text="" wrappingWidth="18.0" />
+      <JFXButton layoutX="400.0" layoutY="387.0" onAction="#NEXT_conZ" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="#005a7f" glyphName="FORWARD" layoutX="18.0" layoutY="408.0" rotate="180.0" size="25.0" text="" wrappingWidth="18.0" />
+      <JFXButton layoutX="6.0" layoutY="385.0" onAction="#BACK_conX" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="#005a7f" glyphName="HOME" layoutX="415.0" layoutY="52.0" size="25.0" />
+      <JFXButton layoutX="401.0" layoutY="31.0" onAction="#NEXT_MAIN" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <JFXButton buttonType="RAISED" layoutX="51.0" layoutY="333.0" onAction="#speak" prefHeight="37.0" prefWidth="355.0" ripplerFill="WHITE" style="-fx-background-color: #005a7f;" text="SPEAK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#fffbfb" glyphName="BULLHORN" layoutX="271.0" layoutY="363.0" size="30.0" />
+   </children>
+</AnchorPane>

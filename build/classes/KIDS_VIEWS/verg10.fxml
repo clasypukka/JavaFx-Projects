@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="371.0" prefWidth="426.0" visible="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KIDS_CONTROLLER.Verg10Controller">
+   <children>
+      <Pane layoutX="63.0" layoutY="72.0" prefHeight="253.0" prefWidth="348.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="210.0" fitWidth="264.0" layoutX="66.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/pawpaw.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="361.0" onAction="#speak" prefHeight="37.0" prefWidth="355.0" ripplerFill="WHITE" style="-fx-background-color: #0bcde7;" text="SPEAK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#0bcde7" glyphName="FORWARD" layoutX="433.0" layoutY="429.0" size="25.0" text="" wrappingWidth="18.0" />
+      <JFXButton layoutX="408.0" layoutY="407.0" onAction="#NEXT_main" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <FontAwesomeIconView fill="#0bcde7" glyphName="FORWARD" layoutX="31.0" layoutY="426.0" rotate="180.0" size="25.0" text="" wrappingWidth="18.0" />
+      <JFXButton layoutX="19.0" layoutY="403.0" onAction="#BACK_verg9" prefHeight="25.0" prefWidth="52.0" text="  " />
+      <Label layoutX="178.0" layoutY="13.0" style="-fx-background-color: #0bcde7;" text="PAWPAW" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#fffbfb" glyphName="BULLHORN" layoutX="295.0" layoutY="391.0" size="30.0" />
+   </children>
+</AnchorPane>

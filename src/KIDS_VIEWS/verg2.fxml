@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KIDS_CONTROLLER.Verg2Controller">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="pane" prefHeight="399.0" prefWidth="456.0" visible="false">
+         <children>
+            <Pane layoutX="52.0" layoutY="50.0" prefHeight="253.0" prefWidth="348.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="210.0" fitWidth="262.0" layoutX="66.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMAGE/Apple_1.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton buttonType="RAISED" layoutX="55.0" layoutY="328.0" onAction="#speak" prefHeight="37.0" prefWidth="355.0" ripplerFill="WHITE" style="-fx-background-color: #0bcde7;" text="SPEAK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="#0bcde7" glyphName="FORWARD" layoutX="421.0" layoutY="394.0" size="25.0" text="" wrappingWidth="18.0" />
+            <JFXButton layoutX="400.0" layoutY="372.0" onAction="#NEXT_verg3" prefHeight="25.0" prefWidth="52.0" text="  " />
+            <FontAwesomeIconView fill="#0bcde7" glyphName="FORWARD" layoutX="16.0" layoutY="393.0" rotate="180.0" size="25.0" text="" wrappingWidth="18.0" />
+            <JFXButton layoutX="4.0" layoutY="370.0" onAction="#BACK_verg1" prefHeight="25.0" prefWidth="52.0" text="  " />
+            <FontAwesomeIconView fill="#0bcde7" glyphName="HOME" layoutX="418.0" layoutY="28.0" size="25.0" />
+            <JFXButton layoutX="404.0" layoutY="7.0" onAction="#NEXT_MAIN" prefHeight="25.0" prefWidth="52.0" text="  " />
+            <Label layoutX="191.0" layoutY="3.0" style="-fx-background-color: #0bcde7;" text="APPLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#fffbfb" glyphName="BULLHORN" layoutX="305.0" layoutY="356.0" size="30.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

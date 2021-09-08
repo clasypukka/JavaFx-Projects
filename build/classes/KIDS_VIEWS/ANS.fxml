@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="KIDS_CONTROLLER.ANSController">
+   <children>
+      <Pane layoutX="166.0" layoutY="33.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="17.0" layoutY="23.0" prefHeight="21.0" prefWidth="20.0" text="Q1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="56.0" prefHeight="21.0" prefWidth="20.0" text="Q2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="94.0" prefHeight="21.0" prefWidth="20.0" text="Q3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="161.0" prefHeight="21.0" prefWidth="20.0" text="Q5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="191.0" prefHeight="21.0" prefWidth="20.0" text="Q6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="231.0" prefHeight="21.0" prefWidth="20.0" text="Q7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="269.0" prefHeight="21.0" prefWidth="20.0" text="Q8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="302.0" prefHeight="21.0" prefWidth="20.0" text="Q9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="125.0" prefHeight="21.0" prefWidth="20.0" text="Q4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="339.0" prefHeight="21.0" prefWidth="28.0" text="Q10">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="LABEL1" layoutX="100.0" layoutY="25.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL10" layoutX="100.0" layoutY="341.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL2" layoutX="100.0" layoutY="58.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL3" layoutX="100.0" layoutY="96.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL4" layoutX="100.0" layoutY="127.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL5" layoutX="100.0" layoutY="163.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL6" layoutX="100.0" layoutY="193.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL7" layoutX="100.0" layoutY="233.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL8" layoutX="100.0" layoutY="271.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+            <Label fx:id="LABEL9" layoutX="100.0" layoutY="304.0" prefHeight="17.0" prefWidth="132.0" style="-fx-background-color: BLUE;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
